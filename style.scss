@@ -1,0 +1,165 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/utilities";
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
+body{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'invasible';
+    src: url(./font/Invasible.otf);
+}
+@font-face {
+    font-family: 'QuintUppercase-Regular';
+    src: url(./font/QuintUppercase-Regular.otf);
+}
+.h2font{
+    font-family: 'QuintUppercase-Regular';
+}
+@media(min-width:485px){
+    .home{
+        background-image: url(img/Group\ 9.png);
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+    }
+    
+}
+@media(max-width:485px){
+    .home{
+        background-image:linear-gradient(#111520,#283643);
+    }
+    .navbar{
+        padding:0;
+    }
+    .sidebar{
+        background-color: #111520 ;
+    }
+    .sidebar a{
+        color: white;
+        font-size:1.4rem;
+    }
+    .logo{
+        width:25%;
+    }
+    .nav-link:hover, .nav-link:focus{
+        color:rgb(0, 255, 247);
+        background: none;
+        background-color: #283643;
+    }
+    .dropdown .dropdown-menu{
+        background-color: #283643;
+        margin:0;
+        padding:0;
+    }
+    .dropdown-menu a{
+        border-bottom:1px solid #000000;
+    }
+    .navbar-nav .nav-link.show{
+        color: rgb(0, 255, 247);
+        padding-inline:16px;
+    }
+    .nav-item span{
+        height:2px;
+        background-color: white;
+        width:50%;
+    }
+}
+
+@media(min-width:486px) and (max-width:991px){
+    .logo{
+        width:20%;
+    }
+    .navbar{
+        padding:0;
+        margin-top:.75rem;
+        padding-right:.25rem;
+    }
+    .sidebar{
+        background-color: #111520 ;
+    }
+    .sidebar a{
+        color: white;
+        font-size:1.4rem;
+    }
+    .dropdown .dropdown-menu{
+        background-color: #283643;
+        margin:0;
+        padding:0;
+    }
+    .dropdown-menu a{
+        border-bottom:1px solid #000000;
+    }
+    
+    .nav-link:hover,.nav-link:focus{
+        color:rgb(0, 255, 247);
+        background-color: #283643;
+    }
+    .navbar-nav .nav-link.show{
+        color: rgb(0, 255, 247);
+        padding-inline:16px;
+    }
+    
+}
+@media(min-width:992px){
+    .logo{
+        width:16%;
+    }
+    .navbar{
+        padding:.5rem;
+    }
+    .nav-item a{
+        color: white;
+        font-size:2rem;
+    }
+    .nav-link{
+        position: relative;
+    }
+    .nav-link:hover, .nav-link:focus{
+        color:white;
+        background: none;
+    }
+    .navbar-nav .nav-link.show{
+        color: white;
+    }
+    .nav-item:focus{
+        width:100%;
+    }
+    .nav-item:hover::after{
+        transform: scaleX(1);
+        transform-origin:left;
+        color:white;
+    }
+    .nav-item::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height:1.5px;
+        background-color: white;
+        width:95%;
+        bottom:20%;
+        left:2.5%;
+        transform: scaleX(0);
+        transform-origin: right;
+        border:none;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        transition:transform 0.25s ease-in;
+    }
+    .dropdown .dropdown-menu{
+        background-color: #283643a3;
+        margin:0;
+        padding:0;
+        font-size:1.8rem;
+    }
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    width: 60%;
+    margin-left: 35%;
+    column-gap: rem;
+}}
