@@ -11868,6 +11868,10 @@ body {
   font-family: "QuintUppercase-Regular";
   src: url(./font/QuintUppercase-Regular.otf);
 }
+.h1font {
+  font-family: "invasible";
+}
+
 .h2font {
   font-family: "QuintUppercase-Regular";
 }
@@ -12003,7 +12007,7 @@ body {
     border: none;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    transition: transform 0.25s ease-in;
+    transition: transform 0.25s ease-in 0s;
   }
   .dropdown .dropdown-menu {
     background-color: rgba(40, 54, 67, 0.6392156863);
@@ -12022,6 +12026,7 @@ body {
 }
 @media (min-width: 1240px) {
   .navbar {
-    padding-inline: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
   }
 }/*# sourceMappingURL=style.min.css.map */
