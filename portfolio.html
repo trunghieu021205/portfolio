@@ -4,35 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.min.css" rel="stylesheet" >
 </head>
 <body>
-    <div class="bg-image mx-0 px-0"
-         style="background-image: url(img/Group\ 9.png);
-                height: 200vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                "
-                >
+    <div class="mx-0 px-0 home">
+                <nav class="navbar fixed-top navbar-expand-lg">
+                  <div class="container-fluid">
+                    <img class="logo" src="./img/Group 8.png">
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header border-bottom">
+                        <h1 class="offcanvas-title text-white " id="offcanvasNavbarLabel">Menu</h1>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-evenly flex-grow-1 ">
+                          <li class="nav-item position-relative">
+                            <a class="nav-link h2font" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item position-relative">
+                            <a class="nav-link h2font" href="#">Project</a>
+                          </li>
+                          <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle h2font" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Package
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item h2font" href="#">Bronze</a></li>
+                              <li><a class="dropdown-item h2font" href="#">Silver</a></li>
+                              <li><a class="dropdown-item h2font" href="#">Gold</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item h2font position-relative">
+                            <a class="nav-link " href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>  
         
-        <nav class="navbar navbar-expand-sm d-inline-flex flex-row justify-content-between w-100 px-3">
-            <img src="img/Group 8.png" alt="" class="w-25" 
-                 >
-            <ul class="w-55 d-flex flex-row justify-content-even align-items-center list-style-none list-unstyled">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Project</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Skill</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Package</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
