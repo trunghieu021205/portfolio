@@ -11883,9 +11883,11 @@ body {
 @media (max-width: 485px) {
   .home {
     background-image: linear-gradient(#111520, #283643);
+    height: 100vh;
   }
   .navbar {
     padding: 0;
+    padding-right: 0.25rem;
   }
   .sidebar {
     background-color: #111520;
@@ -11927,7 +11929,7 @@ body {
   .navbar {
     padding: 0;
     margin-top: 0.75rem;
-    padding-right: 0.25rem;
+    padding-right: 0.4rem;
   }
   .sidebar {
     background-color: #111520;
@@ -11957,8 +11959,13 @@ body {
   .logo {
     width: 16%;
   }
+  .home {
+    height: 200vh;
+  }
   .navbar {
-    padding: 0.5rem;
+    padding-top: 0.25rem;
+    padding-inline: 0rem;
+    position: relative;
   }
   .nav-item a {
     color: white;
@@ -12002,7 +12009,7 @@ body {
     background-color: rgba(40, 54, 67, 0.6392156863);
     margin: 0;
     padding: 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 992px) {
@@ -12011,5 +12018,10 @@ body {
     width: 60%;
     margin-left: 35%;
     column-gap: rem;
+  }
+}
+@media (min-width: 1240px) {
+  .navbar {
+    padding-inline: 0.5rem;
   }
 }/*# sourceMappingURL=style.min.css.map */
