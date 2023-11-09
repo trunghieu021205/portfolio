@@ -4,10 +4,12 @@
 @import "./node_modules/bootstrap/scss/utilities";
 @import "./node_modules/bootstrap/scss/maps";
 @import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/grid";
 body{
     margin:0;
     padding:0;
 }
+
 @font-face {
     font-family: 'invasible';
     src: url(./font/Invasible.otf);
@@ -16,13 +18,29 @@ body{
     font-family: 'QuintUppercase-Regular';
     src: url(./font/QuintUppercase-Regular.otf);
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+}
 .h1font{
     font-family:'invasible';
+    font-size: 2.3rem;
 }
 .h2font{
     font-family: 'QuintUppercase-Regular';
 }
-@media(min-width:485px){
+.h3font{
+    font-family: 'Inter';
+    font-size:1.6425rem;
+}
+.h4font{
+    font-family: 'Inter';
+    font-size:0.9rem;
+}
+.container-fluid{
+    padding:0;
+}
+@media(min-width:576px){
     .home{
         background-image: url(img/Group\ 9.png);
                 height: 100vh;
@@ -31,17 +49,13 @@ body{
     }
     
 }
-@media(max-width:485px){
+@media(max-width:575px){
     .home{
-        background-image: linear-gradient(#111520,#283643);
+        background-image: linear-gradient(to right,#232d57,#8e8282);
         height: 100vh;
     }
     .navbar{
-        padding: 0;
-        padding-right:.25rem;
-    }
-    .sidebar{
-        background-color: #111520 ;
+        padding: 0.5rem 2.45rem 0 1rem;
     }
     .sidebar a{
         color: white;
@@ -50,11 +64,21 @@ body{
     .logo{
         width:25%;
     }
+    
+}
+@media (max-width:991px){
+    .sidebar{
+        background-color: #111520 ;
+    }
     .nav-link:hover, .nav-link:focus{
         color:rgb(0, 255, 247);
         background: none;
         background-color: #283643;
     }
+    .navbar-nav .nav-link.show{
+        color: rgb(0, 255, 247);
+        padding-inline:16px;
+    }  
     .dropdown .dropdown-menu{
         background-color: #283643;
         margin:0;
@@ -63,51 +87,38 @@ body{
     .dropdown-menu a{
         border-bottom:1px solid #000000;
     }
-    .navbar-nav .nav-link.show{
-        color: rgb(0, 255, 247);
-        padding-inline:16px;
+    .row-first{
+        height:14%;
     }
-    .nav-item span{
-        height:2px;
-        background-color: white;
-        width:50%;
+    .info{
+        background-color: #283643;
+        opacity:0.92;
+        border: solid 0.2rem white;
+        border-radius: 0.75rem;
+    }
+    .title{
+        line-height: 1rem;
     }
 }
-
-@media(min-width:486px) and (max-width:991px){
+@media(min-width:576px) and (max-width:991px){
     .logo{
         width:20%;
     }
     .navbar{
+        padding:.75rem 2rem 0 .75rem;
+    }
+    .col-row-first{
         padding:0;
         margin-top:.75rem;
         padding-right:.4rem;
     }
-    .sidebar{
-        background-color: #111520 ;
-    }
     .sidebar a{
         color: white;
-        font-size:1.4rem;
+        font-size:1.5rem;
+    }  
+    .row-first{
+        height:20%;
     }
-    .dropdown .dropdown-menu{
-        background-color: #283643;
-        margin:0;
-        padding:0;
-    }
-    .dropdown-menu a{
-        border-bottom:1px solid #000000;
-    }
-    
-    .nav-link:hover,.nav-link:focus{
-        color:rgb(0, 255, 247);
-        background-color: #283643;
-    }
-    .navbar-nav .nav-link.show{
-        color: rgb(0, 255, 247);
-        padding-inline:16px;
-    }
-    
 }
 @media(min-width:992px){
     .logo{
